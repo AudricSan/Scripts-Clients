@@ -1,0 +1,28 @@
+<html>
+<button type="button" onclick="check()">location</button>
+<script>
+    function check() {
+        console.log("check windows size");
+
+        // Size of browser viewport.
+        const wHeight = window.innerHeight;
+        const wWidth = window.innerWidth;
+
+        if (wHeight < 800 || wWidth < 1000) {
+            alert("trop petit");
+        }
+        console.log(wHeight, wWidth);
+
+        const dHeight = (document.body.clientWidth);
+        const dWidth = (document.body.clientHeight);
+
+
+        if (dHeight < 800 || dWidth < 1500) {
+            alert("trop petit");
+        }
+        
+        console.log(dHeight, dWidth);
+    }
+</script>
+
+</html>

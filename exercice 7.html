@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>exercice 7</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var nomTombola = [];
+
+        function callButtonAjout(){
+        var nomAjout = prompt("Mettez votre nom pour participer à la tombola !");
+        nomTombola.push(nomAjout);
+        }
+
+        function callButtonTirage(){
+            var key = Math.floor(Math.random()*nomTombola.length);
+            var gagnant = nomTombola[key];
+        document.getElementById("gagnant").innerHTML = "Bravo ! Tu es le gagnant ! : <br><br> <b>" + gagnant + "</b>";
+        }
+
+    </script>
+
+    <p>Clique sur ce bouton pour ajouter ton nom au tirage au sort :</p><br>
+
+    <button type="button" onclick="callButtonAjout();">Ajout du nom</button><br>
+
+    <p>Clique sur ce bouton pour tirer au sort le gagnant :</p><br>
+
+    <button type="button" onclick="callButtonTirage();">Tirer au sort</button><br><br>
+
+    <span id="gagnant"></span>  
+</body>
+</html>
