@@ -48,8 +48,12 @@ window.onkeydown = function (key) {
       result.textContent = result.textContent.substring(0, result.textContent.length - 1);
       break;
 
+    case 'Escape':
+      result.textContent = "";
+      break;
+
     default:
-      //console.log(key['key'])
+      console.log(key)
       break;
   }
 }
