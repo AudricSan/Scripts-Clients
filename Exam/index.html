@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr-be">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exam Script Clients - JavaScript</title>
+    
+    <style>
+        td {
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>////////////////////// EXERCICE 1 //////////////////////</h2>
+    <h3>Modifier couleur ligne tableau</h3>
+    <table id="things">
+        <tr id="tr1">
+            <td id="td1">item 1</td>
+            <td id="td2">item 2</td>
+            <td id="td3">item 3</td>
+        </tr>
+        <tr id="tr2">
+            <td id="td4">pommes</td>
+            <td id="td5">oranges</td>
+            <td id="td6">citrons</td>
+        </tr>
+        <tr id="tr3">
+            <td id="td7">merlon</td>
+            <td id="td8">malbec</td>
+            <td id="td9">cabernet sauvignon</td>
+        </tr>
+    </table>
+    <br>
+    <form id="tableControl">
+        <button type="button" id="colorizer">Colorier</button>
+    </form>
+
+    <h2>////////////////////// EXERCICE 2 //////////////////////</h2>
+    <h3>Verifier une entree par une expression reguliere</h3>
+
+    <form id="regular">
+        <p>
+            <label for="inputText"> Sentence Input</label>
+            <input id='inputText' type="text">
+        </p>
+        <p id="valid"> </p>
+
+        <button type="button" id="checker">check</button>
+    </form>
+
+
+    <script src="jquery.js"></script>
+    <script src="const.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
