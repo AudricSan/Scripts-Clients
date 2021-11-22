@@ -5,7 +5,7 @@ console.log('Script Loadded');
 
 //Switch color by multiple click
 $('#colorizer').click(function (e) {
-    console.log('#colorizer');
+    //console.log('#colorizer');
     clicknb++;
 
     switch (clicknb) {
